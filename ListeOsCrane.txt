@@ -1,0 +1,17 @@
+os frontal, impair
+os pariétal, pair 
+os temporal, pair 
+os occipital, impair 
+os sphénoïde, impair 
+os ethmoïde, impair 
+marteau (malleus), pair
+enclume (incus), pair
+étrier (stapes), pair
+vomer, impair
+os maxillaire , pair
+os lacrymal2, pair
+os palatin, pair
+cornet nasal inférieur, pair
+os nasal, pair
+os zygomatique, pair
+mandibule, impair
