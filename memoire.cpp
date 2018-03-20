@@ -1,6 +1,8 @@
 #include "memoire.h"
 #include "ui_memoire.h"
 
+#include "dlgperfs.h"
+
 #include <QTimer>
 #include <QFileDialog>
 #include <QMessageBox>
@@ -86,8 +88,28 @@ void Memoire::on_btnCorrection_clicked()
 	}
 	Resultat r{ui->bxDifficulte->value(), _elapsedSeconds, nbBons};
 	_resultats.push_back(r);
+	QSettings settings;
+	QList <QVariant> buffer = settings.value("performances").toList();
+	QHash <int, double> perfs;
+	foreach (QVariant x, buffer) {
+		QPointF value = x.toPointF();
+		perfs.insert((int)value.x(), value.y());
+	}
+	const auto completion = (float)nbBons /(float)r.niveau;
+	const auto x = (float)r.temps/(float)r.reussites;
+	if ((completion == 1.) && (!perfs.keys().contains(r.niveau) || (x < perfs[r.niveau])))
+	{
+		perfs[r.niveau] = x;
+	}
+	buffer.clear();
+	foreach (int i, perfs.keys())
+	{
+		QPointF value(i, perfs[i]);
+		buffer.push_back(value);
+	}
+	settings.setValue("performances", buffer);
 	ui->lblResultats->setText(QString("Vous avez retenu %1 % des mots.\nUn mot vous prend en moyenne %2 secondes à apprendre")
-							  .arg((float)nbBons * 100. /(float)r.niveau).arg((float)r.temps/(float)r.reussites));
+							  .arg(completion * 100).arg(x));
 	ui->btnNext->setEnabled(true);
 }
 
@@ -130,4 +152,10 @@ void Memoire::chargeItems(QFile &fDict)
 		s.remove('\n');
 		_dictionnaire.push_back(s);
 	}
+}
+
+void Memoire::on_btnPerfs_clicked()
+{
+	DlgPerfs dlg;
+	dlg.exec();
 }

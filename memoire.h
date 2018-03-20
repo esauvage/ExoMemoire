@@ -33,6 +33,8 @@ private slots:
 	void on_btnNext_clicked();
 	void on_actionImporter_des_items_triggered();
 
+	void on_btnPerfs_clicked();
+
 private:
 	void chargeItems(QFile &fDict);
 

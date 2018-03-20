@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>426</width>
+    <width>543</width>
     <height>546</height>
    </rect>
   </property>
@@ -73,6 +73,13 @@
       </property>
      </widget>
     </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="btnPerfs">
+      <property name="text">
+       <string>Performances</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -80,7 +87,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>426</width>
+     <width>543</width>
      <height>23</height>
     </rect>
    </property>
@@ -103,7 +110,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionImporter_des_items">
    <property name="text">
-    <string>Importer des items...</string>
+    <string>&amp;Importer des items...</string>
    </property>
   </action>
  </widget>

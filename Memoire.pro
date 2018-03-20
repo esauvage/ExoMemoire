@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = Memoire
 TEMPLATE = app
@@ -24,8 +24,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        memoire.cpp
+		memoire.cpp \
+	dlgperfs.cpp \
+	qcustomplot.cpp
 
-HEADERS  += memoire.h
+HEADERS  += memoire.h \
+	dlgperfs.h \
+	qcustomplot.h
 
-FORMS    += memoire.ui
+FORMS    += memoire.ui \
+	dlgperfs.ui
