@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>543</width>
-    <height>546</height>
+    <height>511</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,68 +15,78 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="1">
-     <widget class="QPushButton" name="btnRestitution">
-      <property name="text">
-       <string>Cacher</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="btnNouveau">
-      <property name="text">
-       <string>Nouveau jeu de mots</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QListWidget" name="lstLearned"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QListWidget" name="lstToLearn"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="lblChrono">
-      <property name="text">
-       <string>Temps écoulé.</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0" colspan="2">
-     <widget class="QLabel" name="lblResultats">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
+    <item row="4" column="2">
      <widget class="QPushButton" name="btnCorrection">
       <property name="text">
        <string>Correction</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QSpinBox" name="bxDifficulte"/>
+    <item row="3" column="2">
+     <widget class="QListWidget" name="lstLearned"/>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label">
+    <item row="4" column="3">
+     <widget class="QPushButton" name="btnQuit">
       <property name="text">
-       <string>Difficulté :</string>
+       <string>Quitter</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="2" rowspan="2">
+    <item row="3" column="1">
+     <widget class="QListWidget" name="lstToLearn"/>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="btnPerfs">
+      <property name="text">
+       <string>Performances</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QSpinBox" name="bxDifficulte"/>
+    </item>
+    <item row="1" column="3" rowspan="2">
      <widget class="QPushButton" name="btnNext">
       <property name="text">
        <string>&gt;</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="2">
-     <widget class="QPushButton" name="btnPerfs">
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btnRestitution">
       <property name="text">
-       <string>Performances</string>
+       <string>Cacher</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Difficulté :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QPushButton" name="btnNouveau">
+      <property name="text">
+       <string>Nouveau jeu de mots</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="lblChrono">
+      <property name="text">
+       <string>Temps écoulé.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QListWidget" name="lstAide"/>
+    </item>
+    <item row="5" column="0" colspan="4">
+     <widget class="QLabel" name="lblResultats">
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
@@ -96,6 +106,7 @@
      <string>Fic&amp;hier</string>
     </property>
     <addaction name="actionImporter_des_items"/>
+    <addaction name="actionPr_f_rences"/>
    </widget>
    <addaction name="menuFichier"/>
   </widget>
@@ -111,6 +122,11 @@
   <action name="actionImporter_des_items">
    <property name="text">
     <string>&amp;Importer des items...</string>
+   </property>
+  </action>
+  <action name="actionPr_f_rences">
+   <property name="text">
+    <string>Préférences...</string>
    </property>
   </action>
  </widget>

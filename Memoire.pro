@@ -5,7 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+CONFIG += c++11
+QMAKE_CXXFLAGS += -std=c++11
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = Memoire
@@ -26,11 +27,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
 		memoire.cpp \
 	dlgperfs.cpp \
-	qcustomplot.cpp
+	qcustomplot.cpp \
+    preferencesdialog.cpp
 
 HEADERS  += memoire.h \
 	dlgperfs.h \
-	qcustomplot.h
+	qcustomplot.h \
+    preferencesdialog.h
 
 FORMS    += memoire.ui \
-	dlgperfs.ui
+	dlgperfs.ui \
+    preferencesdialog.ui
