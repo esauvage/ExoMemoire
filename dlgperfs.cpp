@@ -1,15 +1,17 @@
 #include "dlgperfs.h"
 #include "ui_dlgperfs.h"
 
+#include <QSettings>
+
 DlgPerfs::DlgPerfs(QWidget *parent) :
 	QDialog(parent),
 	ui(new Ui::DlgPerfs)
 {
 	ui->setupUi(this);
-	QSettings settings;
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, "Sauvage Software", "ExoMemoire");
 	QList <QVariant> buffer = settings.value("performances").toList();
 	QHash <int, double> perfs;
-	double maxX, maxY;
+	double maxX = 0, maxY = 0;
 	foreach (QVariant x, buffer) {
 		QPointF value = x.toPointF();
 		perfs.insert((int)value.x(), value.y());
