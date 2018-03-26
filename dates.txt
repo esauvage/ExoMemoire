@@ -1,0 +1,29 @@
+-52:siège d'Alésia
+-30:mort de Cléopâtre VII
+476:chute de l'empire romain d'occident
+800:Charlemagne sacré empereur
+1337:guerre de Cent ans (début)
+1347:la Grande Peste (début)
+1352:la Grande Peste (fin)
+1453:guerre de Cent ans (fin)
+1492:Christophe Colomb découvre l'Amérique
+1515:bataille de Marignan
+1610:assassinat d'Henri IV
+1685:naissance de J. S. Bach
+1750:mort de J. S. Bach
+1789:révolution française
+1793:exécution de Louis XVI
+1804:Napoléon sacré empereur
+1848:abolition de l'esclavage en France.
+1914:1ère guerre mondiale (début)
+1918:1ère guerre mondiale (fin)
+1936:guerre d'Espagne
+1939:2nde guerre mondiale (début)
+1945:2nde guerre mondiale (fin)
+1946:premier ordinateur
+1957:lancement de Spoutnik
+1961:Youri Gagarine est le premier homme dans l'espace
+1963:assassinat de J. F. Kennedy
+1969:premier pas sur la Lune
+1981:abolition de la peine de mort en France
+1989:chute du mur de Berlin
